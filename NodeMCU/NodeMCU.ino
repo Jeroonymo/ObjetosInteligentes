@@ -1,9 +1,9 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "Angstron";
-const char* password = "SENHA";
-const char* mqtt_server = "192.168.50.100";
+const char* ssid = "NOME_DO_WIFI";
+const char* password = "SENHA_DO_WIFI";
+const char* mqtt_server = "IP_DO_MQTT_SERVER";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
