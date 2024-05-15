@@ -17,7 +17,6 @@ Hardware
 
     Display LCD (LCM 2004A): Exibe os níveis de som em tempo real.
 
-    Atuador (a definir): Executa uma ação com base nos níveis de som (ex: LED de alerta).
 
 Software
 
@@ -42,8 +41,6 @@ Funcionamento
     Detecção de Som: O sensor de som KY-037 detecta os níveis de ruído e envia os dados analógicos para o Arduino Mega.
 
     Processamento de Dados: O Arduino converte os dados analógicos em decibéis (dB) e os exibe no display LCD.
-
-    Acionamento do Atuador: Se o nível de som ultrapassar um limite predefinido, o Arduino aciona o atuador, alertando a equipe da UTIN.
 
     Comunicação MQTT: O Arduino envia os dados de dB para o NodeMCU via comunicação serial. O NodeMCU conecta-se ao broker MQTT via Wi-Fi e publica os dados em um tópico específico.
 
